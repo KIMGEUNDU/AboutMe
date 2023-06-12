@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 전체 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pretendard-Regular';
+}
+
+body {
+  width: 100%;
+  background: url(./image/backgroundImage.png) no-repeat;
+  position: relative;
+}
+
+/* hidden */
+.a11y {
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+
+/* 에이전트스타일 리셋 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+fieldset {
+  border: 0;
+}
+
+/* 메인 페이지 */
+.mainPage {
+  max-width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/* 김건주 */
+.titleBox {
+  height: calc(100% - 500px);
+  padding-top: 250px;
+  text-align: center;
+  color: #fff;
+}
+
+.pageTitle {
+  font-size: 100px;
+}
+
+/* 깃허브, 벨로그 링크 */
+.link {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.link a:first-child {
+  margin-right: 20px;
+}
+
+.link a:hover {
+  color: rgb(67, 67, 67);
+  text-shadow: 0 0 0.1em #fff, 0 0 0.3em #Fff, 0 0 0.5em #Fff;
+}
+
+/* 폼 영역 */
+.searchForm {
+  text-align: center;
+}
+
+/* 검색 컨테이너 */
+.searchBox {
+  height: 40px;
+}
+
+/* 무엇이든 물어보세요 */
+.searchInput {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #9c9c9c;
+  border-right: none;
+  border-radius: 30px 0 0 30px;
+  text-align: center;
+  background: rgba(255, 255, 255, 1%)
+}
+
+/* 제출 버튼 */
+.searchBtn {
+  width: 50px;
+  height: 100%;
+  border: 0;
+  background: rgba(255, 255, 255, 1%);
+  border: 1px solid #9c9c9c;
+  border-radius: 0 30px 30px 0;
+}
+
+/* 프로젝트 박스 */
+.project {
+  width: 60%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 15px;
+  text-align: center;
+}
+
+.project a:hover {
+  display: inline-block;
+  text-shadow: 0 0 0.1em #fff, 1px 0 0.2em #Fff, -1px 0 0.3em #Fff;
+}
+
+.project img {
+  width: 50px;
+}
+
+.project figure {
+  width: 100px;
+}
