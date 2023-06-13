@@ -6,45 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="./image/Goose.png" />
   <link rel="stylesheet" href="./style.css" />
+  <script src="./js/script.js" defer></script>
   <title>About Me</title>
 </head>
 
 <body>
   <div class="mainPage">
-    <h1 class="titleBox"><span class="pageTitle">KIM GEONJU</span></h1>
-    <section class="link">
+    <h1 class="titleBox"><span class="title"></span></h1>
+    <div class="link">
       <a href="https://github.com/KIMGEUNDU?tab=repositories" target="_blank" rel="noopener noreferrer">Github</a>
       <a href="https://velog.io/@f_vlkoklv" target="_blank" rel="noopener noreferrer">Velog</a>
-    </section>
-    <form action="https://formspree.io/f/xlekybnq" class="searchForm">
+    </div>
+    <form action="https://formspree.io/f/xlekybnq" method="post" class="searchForm">
       <fieldset>
         <legend class="a11y">검색창</legend>
         <div class="searchBox">
-          <input class="searchInput" type="search" placeholder="무엇이든 물어보세요 : )" /><button class="searchBtn"
+          <input class="searchInput" type="search" placeholder="무엇이든 물어보세요 : )" required /><button class="searchBtn"
             type="submit"><img src="./image/searchIcon.png" alt="돋보기 아이콘" /></button>
         </div>
       </fieldset>
     </form>
-    <section class="project">
-      <figure class="projectFile1">
-        <a href="https://kimgeundu.github.io/animation_project/" target="_blank" rel="noopener noreferrer"><img
-            src="./image/CD.png" alt="프로젝트" />
+    <div class="project">
+      <a href="https://kimgeundu.github.io/animation_project/" target="_blank" rel="noopener noreferrer">
+        <figure class="projectFile">
+          <img src="./image/CD.png" alt="프로젝트" />
           <figcaption>애니메이션</figcaption>
-        </a>
-      </figure>
-      <figure class="projectFile2">
-        <img src="./image/project.png" alt="프로젝트" />
-        <figcaption>Project</figcaption>
-      </figure>
-      <figure class="projectFile3">
-        <img src="./image/project.png" alt="프로젝트" />
-        <figcaption>Project</figcaption>
-      </figure>
-      <figure class="projectFile4">
-        <img src="./image/project.png" alt="프로젝트" />
-        <figcaption>Project</figcaption>
-      </figure>
-    </section>
+        </figure>
+      </a>
+      <a href="#">
+        <figure class="projectFile">
+          <img src="./image/project.png" alt="프로젝트" />
+          <figcaption>Project</figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure class="projectFile">
+          <img src="./image/project.png" alt="프로젝트" />
+          <figcaption>Project</figcaption>
+        </figure>
+      </a>
+      <a href="#">
+        <figure class="projectFile">
+          <img src="./image/project.png" alt="프로젝트" />
+          <figcaption>Project</figcaption>
+        </figure>
+      </a>
+    </div>
   </div>
 </body>
 
